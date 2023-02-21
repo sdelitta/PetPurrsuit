@@ -1,0 +1,106 @@
+Link {
+  text-decoration: none;
+  color: purple;
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background: white;
+  max-height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.logo,
+.logo-wrapper {
+  flex: 20%;
+  display: flex;
+  justify-content: right;
+  padding-left: 50px;
+  align-items: center;
+  font-size: 32px;
+  font-family: 'Sigmar One';
+}
+
+
+nav {
+  flex: 80%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  align-items: center;
+}
+
+nav a,
+nav h3 {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: auto .5em;
+  color: rgb(116, 7, 189);
+  font-weight: 600;
+  font-size: 16px;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+
+.hidden-menu button {
+  display: none;
+}
+
+nav .rightside {
+  justify-content: flex-end;    
+}
+
+
+
+@media only screen and (max-width: 880px) {
+  nav a,
+  nav h3 {
+    margin: auto .3em;
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+  .creatpostbtn {
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 800;
+  }
+}
+
+
+@media only screen and (max-width: 716px) {
+  header {
+    width: 100%;
+    max-height: 5vh;
+    padding-bottom: .5vh;
+  }
+
+  nav {
+    flex: 80%;
+    display: flex;
+    justify-content: center;
+    padding: .1px;
+    padding-top: 4vh;
+    align-items: center;
+  }
+
+  nav a,
+  nav h3 {
+    margin: auto .7em;
+    padding: 5px;
+    font-size: 17px;
+    width: 100%;
+  }
+
+  .logo,
+  .logo-wrapper {
+      display: none;
+    }
+  }
